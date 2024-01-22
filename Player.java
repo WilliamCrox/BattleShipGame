@@ -29,6 +29,21 @@ public class Player {
 			Grid=O2.getGrid();
 		}
 	}
+
+	//this constructor is for the custom initialization option
+	public Player(int player, boolean custom) {
+		this.player = player;
+		// first player
+		if (player == 0) {
+			O1 = new Ocean(true, 0);
+			Grid = O1.getGrid();
+		}
+		// second player
+		else {
+			O2 = new Ocean(true, 1);
+			Grid = O2.getGrid();
+		}
+	}
 	
 	/**
 	 * Getter method for the playerID
