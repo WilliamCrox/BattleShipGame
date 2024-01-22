@@ -41,6 +41,14 @@ public class Game {
 		player1 = new Player(1);
 		Grid1 = player1.getGrid();
 	}
+
+	//this constuctor is for the custom initialisation option
+	public Game(boolean customGrid) {
+			player0 = new Player(0,true);
+			Grid0 = player0.getGrid();
+			player1 = new Player(1,true);
+			Grid1 = player1.getGrid();
+		}
 	
 	/**
 	 * Method to check for valid input
